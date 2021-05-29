@@ -10,10 +10,9 @@
         
         />
     <TextView 
-        
+        android:id="@+id/sex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="性别"
         />
     <TextView 
         android:id="@+id/age"
@@ -27,9 +26,9 @@
         android:text="祖籍"
         />
     <TextView 
+        android:id="@+id/likeShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="喜欢的课程"
         />
      
 

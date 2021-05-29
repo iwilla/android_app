@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="17"
         android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -25,11 +26,22 @@
         <activity 
             android:name="com.examapplication.register"
             ></activity>
+        <activity android:name="com.examapplication.SecondAtivity">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
         <activity 
             android:label="显示用户注册信息"
             android:icon="@drawable/ic_launcher"
             android:name="com.examapplication.view1"
             ></activity>
+        <receiver android:name=".SMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
         <service android:name="com.examapplication.Myservice"></service>
     </application>
 

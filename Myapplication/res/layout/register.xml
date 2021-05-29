@@ -107,16 +107,19 @@
             android:layout_height="wrap_content"
             >
             <CheckBox
+                android:id="@+id/like1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="android"
                  /> 
                  <CheckBox
+                android:id="@+id/like2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="计算机网络"
                  />
              <CheckBox
+                android:id="@+id/like3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="数据结构"
@@ -134,6 +137,7 @@
             android:onClick="onBottonClick"
             />
 		<Button 
+		    android:id="@+id/tiaozhuan"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:text="隐式跳转"
